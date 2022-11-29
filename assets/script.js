@@ -1,4 +1,6 @@
 var apiKey = "1f0e71fffb79c10df606a7ce0db76164";
+var history = JSON.parse(window.localStorage.getItem('history')) || [];
+
 var searchInput = document.getElementById("search");
 var searchForm = document.querySelector("#searchForm");
 
@@ -18,3 +20,4 @@ function getWeatherData(event) {
 }
 
 searchForm.addEventListener("submit", getWeatherData);
+
