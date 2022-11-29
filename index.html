@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>Weather Dashboard</header>
+      <section class="container">
+        <div class="row">
+            <aside class="col m3">
+                <div class="card">
+                    <div class="card-content">
+                        <form id="searchForm">
+                            <input type="text" id="search" name="search" />
+                            <button type="submit">Search</button>
+                          </form>
+                    </div>
+                </div>
+                <div id="history"></div>
+            </aside>
+            <section class="col m4">
+                <div id="today" class="card"></div>
+            </section>
+            <section class="col m5">
+                <div id="forecast"></div>
+            </section>
+        </div>
+    </section>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
